@@ -24,6 +24,7 @@ public:
 private:
     /* 	begin is included in the generating range, but end is not
     	so that's like [begin, end)
+    	when begin == end, there is no element in the range
     */
     TreeNode *generate(ListNode *begin, ListNode *end) {
         if (begin == end)
