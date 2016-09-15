@@ -1,12 +1,14 @@
 class Solution {
 public:
-	/* allow only one transaction */
+    /* allow only one transaction */
     int maxProfit(vector<int>& prices) {
         if (prices.size() == 0)
             return 0;
         int profit = 0;
         int min_price = prices[0];
         int i = 0;
+
+        /* find all U-shape, buy at bottom and sell at top */
         while (i < prices.size()) {
             while (i + 1 < prices.size() && prices[i] >= prices[i + 1])
                 ++i;
