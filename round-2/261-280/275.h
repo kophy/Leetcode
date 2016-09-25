@@ -7,6 +7,8 @@ public:
     int hIndex(vector<int>& citations) {
         int N = citations.size();
         int l = 0, r = N - 1;
+		
+		// maybe should treat [l, r] as a black box part...
         while (l <= r) {
             int m = (l + r) / 2;
             if (citations[m] < N - m)
@@ -17,6 +19,7 @@ public:
                 return citations[m];
         }
 
+		// use l because l is safe -- citation[l] >= N - l
         return N - l;
     }
 };
