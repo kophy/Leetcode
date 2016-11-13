@@ -11,8 +11,3 @@
   mocha  
   2016/08/29 - now  
   in progress
-
-- **round 2.5 (C++/Java/Python)**  
-  latte  
-  2016/11/09 - now  
-  repeat problems to keep the "feeling"
