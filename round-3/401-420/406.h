@@ -1,18 +1,12 @@
 class Solution {
 public:
-    string toHex(int num) {
-        string result = "";
-        for (int count = 0; count < 8; ++count) {
-            int temp = num & 15;
-            if (temp < 10)
-                result.push_back('0'+ temp);
-            else
-                result.push_back('a'+temp-10);
-            num = num >> 4;
-            if (num == 0)
-                break;
-        }
-        reverse(result.begin(), result.end());
+    vector<pair<int, int>> reconstructQueue(vector<pair<int, int>>& people) {
+        sort(people.begin(), people.end(), [](pair<int, int> &a, pair<int, int> &b) -> bool {
+            return a.first > b.first || (a.first == b.first && a.second < b.second);
+        });
+        vector<pair<int, int>> result;
+        for (auto person : people)
+            result.insert(result.begin() + person.second, person);
         return result;
     }
 };
