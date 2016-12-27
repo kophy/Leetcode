@@ -1,0 +1,15 @@
+class Solution {
+public:
+    vector<string> readBinaryWatch(int num) {
+        vector<string> result;
+        for (int h = 0; h < 12; ++h) {
+            for (int m = 0; m < 60; ++m)
+                if (bitset<10>((h << 6) + m).count() == num) {
+                    string time = to_string(h) + ":";
+                    time += (m < 10)? ("0" + to_string(m)) : to_string(m);
+                    result.push_back(time);
+                }
+        }
+        return result;
+    }
+};
