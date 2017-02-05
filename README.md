@@ -17,4 +17,4 @@
   2016/12/02 - 2016/02/05  
   it's time to make a change  
 
-My C++ improved greatly by practicing on Leetcode, now I will learn Python. 
+My C++ improved greatly by practicing on Leetcode. Now I will learn Python. 
