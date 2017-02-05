@@ -9,9 +9,12 @@
 
 - **round 2 (C++)**  
   mocha  => 甘い  
-  2016/08/29 - now  
+  2016/08/29 - 2016/11/30  
   ~~in progress~~  let's treat it as finished  
 
-- **round 3 (C++ / Python)**  
-  piccolo => why this name?  
-  2016/12/02 - now  
+- **round 3 (C++)**  
+  hawaii => why this name?  
+  2016/12/02 - 2016/02/05  
+  it's time to make a change  
+
+My C++ improved greatly by practicing on Leetcode, now I will learn Python. 
