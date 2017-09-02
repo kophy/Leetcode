@@ -17,4 +17,7 @@
   2016/12/02 - 2016/02/05  
   it's time to make a change  
 
-My C++ improved greatly by practicing on Leetcode. Now I will learn Python. 
+- **round 4 (C++)**  
+  americano => life is bittersweet  
+  2017/09/01 - ?  
+  ...Then I start a new voyage.  
