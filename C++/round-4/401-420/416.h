@@ -2,16 +2,14 @@ class Solution {
 public:
 	bool canPartition(vector<int>& nums) {
 		int sum = accumulate(nums.begin(), nums.end(), 0);
-		if (nums.size() == 1 || sum % 2 == 1)
+		if (sum % 2 != 0)
 			return false;
-		int target = sum / 2;
-		vector<bool> dp(target + 1, false);
+		vector<bool> dp(sum + 1, false);
 		dp[0] = true;
-
-		// classic pattern when each item can be used only once
-		for (int num : nums)
-			for (int i = target; i >= num; --i)
-				dp[i] = dp[i] || dp[i - num];
-		return dp[target];
+		for (int num : nums) {
+			for (int j = sum; j >= num; --j)
+				dp[j] = dp[j] || dp[j - num];
+		}
+		return dp[sum / 2];
 	}
 };
