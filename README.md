@@ -19,5 +19,10 @@
 
 - **round 4 (C++)**  
   americano => life is bittersweet  
-  2017/09/01 - ?  
+  2017/09/01 - 2018/10/06  
   ...Then I start a new voyage.  
+
+- **round 5 (C++)**  
+  nitro => don't end up here  
+  2018/10/07 - ?  
+  Tonight I continue to walk straight ahead.  
