@@ -1,32 +1,12 @@
 class Solution {
- public:
-  int shipWithinDays(vector<int> &weights, int D) {
-    int low = *std::max_element(weights.begin(), weights.end());
-    int high = std::accumulate(weights.begin(), weights.end(), 0);
-    while (low < high) {
-      int mid = (low + high) / 2;
-      if (canShip(weights, D, mid)) {
-        high = mid;
-      } else {
-        low = mid + 1;
-      }
+public:
+    int maxScoreSightseeingPair(vector<int>& A) {
+        int result = 0;
+        int max_first = A[0];   // max(A[i] + i)
+        for (int j = 1; j < A.size(); ++j) {
+            result = std::max(result, max_first + A[j] - j);
+            max_first = std::max(max_first, A[j] + j);
+        }
+        return result;
     }
-    return low;
-  }
-
- private:
-  bool canShip(const vector<int> &weights, int D, int capacity) {
-    vector<int> orders(D, 0);
-    int i = 0;
-    for (int weight : weights) {
-      if (orders[i] + weight > capacity) {
-        ++i;
-      }
-      if (i >= D) {
-        return false;
-      }
-      orders[i] += weight;
-    }
-    return true;
-  }
 };

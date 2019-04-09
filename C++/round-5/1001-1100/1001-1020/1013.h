@@ -1,18 +1,28 @@
 class Solution {
  public:
-  int numPairsDivisibleBy60(vector<int>& time) {
-    unordered_map<int, int> m;
-    for (int t : time) {
-      ++m[t % 60];
+  bool canThreePartsEqualSum(vector<int> &A) {
+    int N = A.size();
+    if (N < 3) {
+      return false;
     }
-    int result = 0;
-    for (const auto& p : m) {
-      if (p.first == 0 || p.first == 30) {
-        result += p.second * (p.second - 1);
-      } else if (m.count(60 - p.first)) {
-        result += p.second * m[60 - p.first];
+    vector<int> presum(N + 1, 0);
+    for (int i = 0; i < N; ++i) {
+      presum[i + 1] = presum[i] + A[i];
+    }
+    if (presum[N] % 3 != 0) {
+      return 0;
+    }
+    int partition = presum[N] / 3;
+    for (int i = 0; i < N; ++i) {
+      if (presum[i] != partition) {
+        continue;
+      }
+      for (int j = i + 1; j <= N; ++j) {
+        if (presum[j] - presum[i] == partition) {
+          return true;
+        }
       }
     }
-    return result / 2;
+    return false;
   }
 };
