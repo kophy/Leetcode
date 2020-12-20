@@ -1,6 +1,6 @@
 class Solution {
- public:
-  double probabilityOfHeads(vector<double>& prob, int target) {
+public:
+  double probabilityOfHeads(vector<double> &prob, int target) {
     int N = prob.size();
     vector<vector<double>> dp(N + 1, vector<double>(target + 1, 0.0));
     dp[0][0] = 1.0;

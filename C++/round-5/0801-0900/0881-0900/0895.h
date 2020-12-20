@@ -1,5 +1,5 @@
 class FreqStack {
- public:
+public:
   FreqStack() { max_freq = 0; }
 
   void push(int x) {
@@ -20,7 +20,7 @@ class FreqStack {
     return x;
   }
 
- private:
+private:
   int max_freq;
   unordered_map<int, int> num2freq;
   map<int, stack<int>> freq2nums;

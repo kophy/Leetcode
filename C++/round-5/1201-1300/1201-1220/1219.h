@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int getMaximumGold(vector<vector<int>> &grid) {
     if (grid.empty() || grid[0].empty()) {
       return 0;
@@ -16,7 +16,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   int M, N;
 
   int dfs(vector<vector<int>> &grid, vector<vector<bool>> &visited, int i,

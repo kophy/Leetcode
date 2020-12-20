@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int countVowelPermutation(int n) {
     vector<vector<long>> dp(n + 1, vector<long>(5, 0));
     for (int j = 0; j < 5; ++j) {
@@ -19,6 +19,6 @@ class Solution {
     return result;
   }
 
- private:
+private:
   int M = pow(10, 9) + 7;
 };

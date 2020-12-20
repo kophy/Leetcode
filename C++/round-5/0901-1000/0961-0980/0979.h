@@ -8,14 +8,14 @@
  * };
  */
 class Solution {
- public:
+public:
   int distributeCoins(TreeNode *root) {
     int result = 0;
     dfs(result, root);
     return result;
   }
 
- private:
+private:
   int dfs(int &result, TreeNode *root) {
     if (root == nullptr) {
       return 0;

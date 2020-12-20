@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int minDeletionSize(vector<string>& A) {
+public:
+  int minDeletionSize(vector<string> &A) {
     if (A.empty()) {
       return 0;
     }

@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   vector<vector<int>> verticalTraversal(TreeNode *root) {
     map<int, vector<pair<int, int>>> data;
     traverse(data, root, 0, 0);
@@ -27,7 +27,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   void traverse(map<int, vector<pair<int, int>>> &data, TreeNode *root, int x,
                 int y) {
     if (root == nullptr) {

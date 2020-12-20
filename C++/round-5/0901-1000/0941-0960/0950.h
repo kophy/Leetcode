@@ -1,6 +1,6 @@
 class Solution {
- public:
-  vector<int> deckRevealedIncreasing(vector<int>& deck) {
+public:
+  vector<int> deckRevealedIncreasing(vector<int> &deck) {
     vector<int> indices = revealIndices(deck.size());
     sort(deck.begin(), deck.end());
     vector<int> result(deck.size());
@@ -10,7 +10,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   vector<int> revealIndices(int N) {
     vector<int> indices;
     deque<int> data;

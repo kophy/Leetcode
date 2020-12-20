@@ -1,6 +1,6 @@
 // A number's label will be its smallest factor greater than 1.
 class Solution {
- public:
+public:
   int largestComponentSize(vector<int> &A) {
     int N = *max_element(A.begin(), A.end());
     vector<int> labels(N + 1, 0);
@@ -25,7 +25,7 @@ class Solution {
     return max_component;
   }
 
- private:
+private:
   int findLabel(vector<int> &labels, int i) {
     if (labels[i] != i) {
       labels[i] = findLabel(labels, labels[i]);

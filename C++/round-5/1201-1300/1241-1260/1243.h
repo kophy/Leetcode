@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> transformArray(vector<int> &arr) {
     while (true) {
       vector<int> transformed = transform(arr);
@@ -11,7 +11,7 @@ class Solution {
     return {};
   }
 
- private:
+private:
   vector<int> transform(const vector<int> &arr) {
     vector<int> transformed = arr;
     for (int i = 1; i < (int)arr.size() - 1; ++i) {

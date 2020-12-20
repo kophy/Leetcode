@@ -8,17 +8,17 @@
  * };
  */
 class Solution {
- public:
-  bool leafSimilar(TreeNode* root1, TreeNode* root2) {
+public:
+  bool leafSimilar(TreeNode *root1, TreeNode *root2) {
     vector<int> leaves1 = getLeaves(root1);
     vector<int> leaves2 = getLeaves(root2);
     return leaves1 == leaves2;
   }
 
- private:
-  vector<int> getLeaves(TreeNode* root) {
+private:
+  vector<int> getLeaves(TreeNode *root) {
     vector<int> leaves;
-    stack<TreeNode*> data;
+    stack<TreeNode *> data;
     data.push(root);
     while (!data.empty()) {
       auto node = data.top();

@@ -7,7 +7,7 @@
  * };
  */
 class Solution {
- public:
+public:
   ListNode *mergeKLists(vector<ListNode *> &lists) {
     auto cmp = [](ListNode *a, ListNode *b) -> bool { return a->val > b->val; };
     priority_queue<ListNode *, vector<ListNode *>, decltype(cmp)> data(cmp);

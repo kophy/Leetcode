@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minDeletionSize(vector<string> &A) {
     int N = A[0].size();
     int deletion = 0;
@@ -18,7 +18,7 @@ class Solution {
     return deletion;
   }
 
- private:
+private:
   bool keepSorted(vector<string> &A, vector<bool> &sorted, int j) {
     for (int i = 0; i < (int)A.size() - 1; ++i) {
       if (!sorted[i] && (A[i][j] > A[i + 1][j])) {

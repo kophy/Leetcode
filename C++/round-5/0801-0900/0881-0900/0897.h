@@ -8,9 +8,9 @@
  * };
  */
 class Solution {
- public:
-  TreeNode* increasingBST(TreeNode* root) {
-    stack<TreeNode*> data;
+public:
+  TreeNode *increasingBST(TreeNode *root) {
+    stack<TreeNode *> data;
     for (; root != nullptr; root = root->left) {
       data.push(root);
     }

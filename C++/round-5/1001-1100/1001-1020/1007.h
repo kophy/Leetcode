@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minDominoRotations(vector<int> &A, vector<int> &B) {
     // 1. check if there is a value shared by all dominoes.
     unordered_set<int> candidates = {A[0], B[0]};

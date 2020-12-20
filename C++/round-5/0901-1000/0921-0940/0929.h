@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numUniqueEmails(vector<string> &emails) {
     unordered_map<string, unordered_set<string>> domain_to_locals;
     for (const auto &email : emails) {
@@ -13,7 +13,7 @@ class Solution {
     return count;
   }
 
- private:
+private:
   pair<string, string> parseEmail(const string &email) {
     int at = email.find('@');
     string domain = email.substr(at + 1);

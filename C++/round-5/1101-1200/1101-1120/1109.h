@@ -1,8 +1,8 @@
 class Solution {
- public:
-  vector<int> corpFlightBookings(vector<vector<int>>& bookings, int n) {
+public:
+  vector<int> corpFlightBookings(vector<vector<int>> &bookings, int n) {
     vector<int> dp(n + 1);
-    for (const auto& booking : bookings) {
+    for (const auto &booking : bookings) {
       dp[booking[0] - 1] += booking[2];
       dp[booking[1]] -= booking[2];
     }

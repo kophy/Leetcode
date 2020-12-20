@@ -8,8 +8,8 @@
  * };
  */
 class Solution {
- public:
-  bool flipEquiv(TreeNode* root1, TreeNode* root2) {
+public:
+  bool flipEquiv(TreeNode *root1, TreeNode *root2) {
     if (root1 == nullptr && root2 == nullptr) {
       return true;
     }
@@ -25,7 +25,7 @@ class Solution {
     return memo[root1][root2];
   }
 
- private:
-  unordered_map<TreeNode*, unordered_map<TreeNode*, bool>>
-      memo;  // space complexity is O(N^2)
+private:
+  unordered_map<TreeNode *, unordered_map<TreeNode *, bool>>
+      memo; // space complexity is O(N^2)
 };

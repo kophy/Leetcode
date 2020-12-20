@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> uncommonFromSentences(string A, string B) {
     unordered_map<string, int> word_to_count;
     stringstream ssa(A), ssb(B);

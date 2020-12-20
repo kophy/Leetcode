@@ -7,8 +7,8 @@
  * };
  */
 class Solution {
- public:
-  ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+public:
+  ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
     ListNode dummy(0), *curr = &dummy;
     while (l1 != nullptr && l2 != nullptr) {
       if (l1->val <= l2->val) {

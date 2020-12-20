@@ -8,14 +8,14 @@
  * };
  */
 class Solution {
- public:
+public:
   string smallestFromLeaf(TreeNode *root) {
     string result;
     traverse(result, root, "");
     return result;
   }
 
- private:
+private:
   void traverse(string &result, TreeNode *root, string path) {
     if (root == nullptr) {
       return;

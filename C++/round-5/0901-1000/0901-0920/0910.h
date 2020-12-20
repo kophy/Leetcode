@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int smallestRangeII(vector<int>& A, int K) {
+public:
+  int smallestRangeII(vector<int> &A, int K) {
     sort(A.begin(), A.end());
     int N = A.size();
     int result = A[N - 1] - A[0];

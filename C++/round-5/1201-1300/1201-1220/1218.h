@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int longestSubsequence(vector<int>& arr, int difference) {
+public:
+  int longestSubsequence(vector<int> &arr, int difference) {
     int result = 0;
     unordered_map<int, int> dp;
     for (int x : arr) {

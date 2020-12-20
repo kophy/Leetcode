@@ -1,12 +1,12 @@
 class Solution {
- public:
+public:
   bool isValidPalindrome(string s, int k) {
     string t = s;
     reverse(t.begin(), t.end());
     return (s.size() - lcs(s, t)) <= k;
   }
 
- private:
+private:
   int lcs(const string &s, const string &t) {
     int N = s.size();
     vector<vector<int>> dp(N + 1, vector<int>(N + 1, 0));

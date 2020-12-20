@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string largestTimeFromDigits(vector<int> &A) {
     vector<int> largestTime;
     sort(A.begin(), A.end());
@@ -22,7 +22,7 @@ class Solution {
     return ss.str();
   }
 
- private:
+private:
   bool isValidTime(vector<int> &t) {
     int h = getHour(t);
     int m = getMinute(t);

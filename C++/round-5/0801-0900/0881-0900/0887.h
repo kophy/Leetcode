@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int superEggDrop(int K, int N) {
     vector<vector<int>> dp(N + 1, vector<int>(K + 1, 0));
     for (int m = 1; m <= N; ++m) {

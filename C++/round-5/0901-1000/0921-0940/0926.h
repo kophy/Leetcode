@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minFlipsMonoIncr(string S) {
     int N = S.size();
     int total_ones = 0;

@@ -8,20 +8,20 @@
  * };
  */
 class Solution {
- public:
-  vector<int> findMode(TreeNode* root) {
+public:
+  vector<int> findMode(TreeNode *root) {
     curr_count = 0;
     max_count = 0;
     inorderTraversal(root);
     return modes;
   }
 
- private:
+private:
   vector<int> modes;
   int last_elem;
   int curr_count, max_count;
 
-  void inorderTraversal(TreeNode* root) {
+  void inorderTraversal(TreeNode *root) {
     if (root == nullptr) {
       return;
     }

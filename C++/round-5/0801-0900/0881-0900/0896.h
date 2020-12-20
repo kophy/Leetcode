@@ -1,6 +1,6 @@
 class Solution {
- public:
-  bool isMonotonic(vector<int>& A) {
+public:
+  bool isMonotonic(vector<int> &A) {
     int i = 0;
     // skip all equal elements.
     while (i + 1 < A.size() && A[i] == A[i + 1]) {

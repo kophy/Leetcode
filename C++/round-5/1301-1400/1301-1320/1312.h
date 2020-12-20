@@ -1,12 +1,12 @@
 class Solution {
- public:
+public:
   int minInsertions(string s) {
     string t = s;
     reverse(s.begin(), s.end());
     return s.size() - lcs(s, t);
   }
 
- private:
+private:
   int lcs(const string &s, const string &t) {
     vector<vector<int>> dp(s.size() + 1, vector<int>(t.size() + 1, 0));
     for (int i = 0; i < s.size(); ++i) {

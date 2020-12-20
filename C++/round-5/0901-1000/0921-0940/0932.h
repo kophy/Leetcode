@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> beautifulArray(int N) {
     if (memo.count(N)) {
       return memo[N];
@@ -22,6 +22,6 @@ class Solution {
     return result;
   }
 
- private:
+private:
   unordered_map<int, vector<int>> memo;
 };

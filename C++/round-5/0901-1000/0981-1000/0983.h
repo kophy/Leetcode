@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int mincostTickets(vector<int>& days, vector<int>& costs) {
+public:
+  int mincostTickets(vector<int> &days, vector<int> &costs) {
     int N = days.size();
     vector<int> dp(N + 1, INT_MAX);
     dp[N - 1] = costs[0];

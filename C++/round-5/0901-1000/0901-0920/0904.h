@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int totalFruit(vector<int>& tree) {
+public:
+  int totalFruit(vector<int> &tree) {
     int result = 0;
     unordered_map<int, int> count;
     for (int i = 0, j = 0; j < tree.size(); ++j) {

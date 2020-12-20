@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string convertToBase7(int num) {
     int flag = (num >= 0) ? 1 : -1;
     long lnum = abs(long(num));

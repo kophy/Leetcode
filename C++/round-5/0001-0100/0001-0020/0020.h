@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool isValid(string s) {
     stack<char> unclosed;
     unordered_map<char, char> m = {{'(', ')'}, {'[', ']'}, {'{', '}'}};

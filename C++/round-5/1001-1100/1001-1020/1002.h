@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> commonChars(vector<string> &A) {
     if (A.empty()) {
       return {};
@@ -20,7 +20,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   vector<int> getCharCount(const string &s) {
     vector<int> result(26, 0);
     for (char c : s) {

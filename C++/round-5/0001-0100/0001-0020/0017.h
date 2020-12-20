@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> letterCombinations(string digits) {
     vector<string> result;
     unordered_map<char, string> m = {{'2', "abc"}, {'3', "def"}, {'4', "ghi"},
@@ -12,7 +12,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   void backtracking(vector<string> &result, unordered_map<char, string> &m,
                     string &digits, string &letters, int k) {
     if (k == digits.size()) {

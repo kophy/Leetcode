@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool hasGroupsSizeX(vector<int> &deck) {
     unordered_map<int, int> count;
     for (int card : deck) {
@@ -12,7 +12,7 @@ class Solution {
     return X >= 2;
   }
 
- private:
+private:
   int gcd(int a, int b) {
     if (a > b) {
       return gcd(b, a);

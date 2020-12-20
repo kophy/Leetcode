@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maximizeSweetness(vector<int> &sweetness, int K) {
     int low = 0;
     int high = std::accumulate(sweetness.begin(), sweetness.end(), 0);
@@ -14,7 +14,7 @@ class Solution {
     return low;
   }
 
- private:
+private:
   bool check(vector<int> &sweetness, int K, int threshold) {
     int count = 0;
     int current = 0;

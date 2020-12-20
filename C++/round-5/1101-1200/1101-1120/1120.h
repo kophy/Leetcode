@@ -8,14 +8,14 @@
  * };
  */
 class Solution {
- public:
+public:
   double maximumAverageSubtree(TreeNode *root) {
     double result = 0;
     helper(root, result);
     return result;
   }
 
- private:
+private:
   pair<int, int> helper(TreeNode *root, double &result) {
     if (root == nullptr) {
       return std::make_pair(0, 0);

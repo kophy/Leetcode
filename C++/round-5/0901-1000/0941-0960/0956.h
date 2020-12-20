@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int tallestBillboard(vector<int> &rods) {
     int sum = accumulate(rods.begin(), rods.end(), 0);
     vector<vector<int>> dp(rods.size() + 1, vector<int>(2 * sum + 1, 0));

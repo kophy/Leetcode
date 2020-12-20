@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int removeStones(vector<vector<int>> &stones) {
     if (stones.empty() || stones[0].empty()) {
       return 0;
@@ -36,7 +36,7 @@ class Solution {
     return moves;
   }
 
- private:
+private:
   void unionLabels(unordered_map<int, int> &labels, int i, int j) {
     labels[findLabel(labels, i)] = findLabel(labels, j);
   }

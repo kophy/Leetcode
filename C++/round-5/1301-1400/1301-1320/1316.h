@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int distinctEchoSubstrings(string text) {
     unordered_set<string> result;
     for (int i = 0; i < text.size(); ++i) {

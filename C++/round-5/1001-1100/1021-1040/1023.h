@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<bool> camelMatch(vector<string> &queries, string pattern) {
     vector<bool> result;
     for (string &query : queries) {
@@ -8,7 +8,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   bool camelMatch(const string &query, const string &pattern) {
     int i = 0, j = 0;
     while (i < query.size() && j < pattern.size()) {

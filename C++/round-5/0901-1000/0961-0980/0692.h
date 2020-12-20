@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxWidthRamp(vector<int> &A) {
     vector<pair<int, int>> values_with_indices(A.size());
     for (int i = 0; i < A.size(); ++i) {

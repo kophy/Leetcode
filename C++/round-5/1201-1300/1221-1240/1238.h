@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> circularPermutation(int n, int start) {
     vector<int> gary(1, 0);
     for (int i = 0; i < n; ++i) {

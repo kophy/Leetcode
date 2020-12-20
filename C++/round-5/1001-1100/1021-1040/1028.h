@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   TreeNode *recoverFromPreorder(string S) {
     if (S.empty()) {
       return nullptr;
@@ -29,7 +29,7 @@ class Solution {
     return recoverFromPreorder(data, 0, (int)data.size() - 1);
   }
 
- private:
+private:
   TreeNode *recoverFromPreorder(vector<pair<int, int>> &data, int begin,
                                 int end) {
     if (begin > end) {

@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool isLongPressedName(string name, string typed) {
     int i = 0, j = 0;
     while (i < name.size() && j < typed.size()) {

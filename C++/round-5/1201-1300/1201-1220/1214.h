@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   bool twoSumBSTs(TreeNode *root1, TreeNode *root2, int target) {
     unordered_set<int> elems1, elems2;
     traverse(root1, elems1);
@@ -21,7 +21,7 @@ class Solution {
     return false;
   }
 
- private:
+private:
   void traverse(TreeNode *root, unordered_set<int> &elems) {
     if (root == nullptr) {
       return;

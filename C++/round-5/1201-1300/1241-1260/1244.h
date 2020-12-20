@@ -1,5 +1,5 @@
 class Leaderboard {
- public:
+public:
   Leaderboard() {}
 
   void addScore(int playerId, int score) {
@@ -32,7 +32,7 @@ class Leaderboard {
     ++freqs[0];
   }
 
- private:
+private:
   unordered_map<int, int> scores;
   map<int, int> freqs;
 };

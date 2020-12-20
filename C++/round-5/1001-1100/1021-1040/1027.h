@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int longestArithSeqLength(vector<int> &A) {
     map<int, set<int>> val_to_indices;
     for (int i = 0; i < A.size(); ++i) {

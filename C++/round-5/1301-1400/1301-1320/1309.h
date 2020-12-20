@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string freqAlphabets(string s) {
     string result;
     int i = 0;

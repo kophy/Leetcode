@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int findJudge(int N, vector<vector<int>> &trust) {
     vector<int> outgoing(N + 1, 0), incoming(N + 1, 0);
     for (auto &p : trust) {

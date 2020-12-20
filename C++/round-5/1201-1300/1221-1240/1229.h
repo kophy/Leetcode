@@ -1,8 +1,8 @@
 class Solution {
- public:
-  vector<int> minAvailableDuration(vector<vector<int>>& slots1,
-                                   vector<vector<int>>& slots2, int duration) {
-    auto f = [](const vector<int>& s1, const vector<int>& s2) -> bool {
+public:
+  vector<int> minAvailableDuration(vector<vector<int>> &slots1,
+                                   vector<vector<int>> &slots2, int duration) {
+    auto f = [](const vector<int> &s1, const vector<int> &s2) -> bool {
       return s1[0] < s2[0];
     };
     sort(slots1.begin(), slots1.end(), f);

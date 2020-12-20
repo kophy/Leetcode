@@ -1,6 +1,6 @@
 /* Method 1: count */
 class Solution {
- public:
+public:
   int lengthOfLongestSubstring(string s) {
     int max_length = 0;
     vector<int> count(256, 0);
@@ -19,7 +19,7 @@ class Solution {
 
 /* Method 2: index of last appearance */
 class Solution {
- public:
+public:
   int lengthOfLongestSubstring(string s) {
     int max_length = 0;
     unordered_map<char, int> char2idx;

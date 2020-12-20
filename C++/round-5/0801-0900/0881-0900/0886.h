@@ -1,6 +1,6 @@
 // bipartition <=> paint nodes with two colors
 class Solution {
- public:
+public:
   bool possibleBipartition(int N, vector<vector<int>> &dislikes) {
     unordered_map<int, vector<int>> dislike_map;
     for (const auto &p : dislikes) {
@@ -18,7 +18,7 @@ class Solution {
     return true;
   }
 
- private:
+private:
   bool paint(unordered_map<int, int> &colors,
              unordered_map<int, vector<int>> &dislike, int i, int color) {
     if (colors.count(i)) {

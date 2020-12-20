@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool parseBoolExpr(string expression) {
     if (expression == "t") {
       return true;
@@ -27,7 +27,7 @@ class Solution {
     return false;
   }
 
- private:
+private:
   vector<string> splitExprs(const string &s) {
     vector<string> exprs;
     int count = 0;

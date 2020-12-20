@@ -8,14 +8,14 @@
  * };
  */
 class Solution {
- public:
+public:
   int sumEvenGrandparent(TreeNode *root) {
     int sum = 0;
     dfs(root, false, false, sum);
     return sum;
   }
 
- private:
+private:
   void dfs(TreeNode *root, bool even_parent, bool even_grandparent, int &sum) {
     if (root == nullptr || visited.count(root)) {
       return;

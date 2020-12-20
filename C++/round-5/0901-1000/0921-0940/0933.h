@@ -1,5 +1,5 @@
 class RecentCounter {
- public:
+public:
   RecentCounter() {}
 
   int ping(int t) {
@@ -10,7 +10,7 @@ class RecentCounter {
     return times.size();
   }
 
- private:
+private:
   deque<int> times;
 };
 

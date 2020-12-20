@@ -1,4 +1,4 @@
 class Solution {
- public:
+public:
   bool divisorGame(int N) { return (N % 2 == 0); }
 };

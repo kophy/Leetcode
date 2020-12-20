@@ -1,7 +1,7 @@
 class Solution {
- public:
-  vector<int> sumEvenAfterQueries(vector<int>& A,
-                                  vector<vector<int>>& queries) {
+public:
+  vector<int> sumEvenAfterQueries(vector<int> &A,
+                                  vector<vector<int>> &queries) {
     int sum = 0;
     for (int x : A) {
       if (x % 2 == 0) {
@@ -9,7 +9,7 @@ class Solution {
       }
     }
     vector<int> result;
-    for (const auto& query : queries) {
+    for (const auto &query : queries) {
       int val = query[0], idx = query[1];
       if (A[idx] % 2 == 0 && val % 2 == 0) {
         sum += val;

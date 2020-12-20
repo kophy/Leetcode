@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maximumMinimumPath(vector<vector<int>> &A) {
     if (A.empty() || A[0].empty()) {
       return 0;
@@ -45,7 +45,7 @@ class Solution {
     return 0;
   }
 
- private:
+private:
   int M, N;
 
   int findLabel(vector<int> &labels, int x) {

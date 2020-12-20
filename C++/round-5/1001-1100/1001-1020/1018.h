@@ -1,6 +1,6 @@
 class Solution {
- public:
-  vector<bool> prefixesDivBy5(vector<int>& A) {
+public:
+  vector<bool> prefixesDivBy5(vector<int> &A) {
     vector<bool> result;
     int sum_mod_5 = 0;
     for (int x : A) {

@@ -7,8 +7,8 @@
  * };
  */
 class Solution {
- public:
-  vector<int> nextLargerNodes(ListNode* head) {
+public:
+  vector<int> nextLargerNodes(ListNode *head) {
     vector<int> result;
     for (; head != nullptr; head = head->next) {
       result.push_back(head->val);

@@ -7,7 +7,7 @@
  * };
  */
 class Solution {
- public:
+public:
   vector<string> crawl(string startUrl, HtmlParser htmlParser) {
     queue<string> urls;
     urls.push(startUrl);
@@ -29,7 +29,7 @@ class Solution {
     return vector<string>(seen.begin(), seen.end());
   }
 
- private:
+private:
   string getHost(string &url) {
     int i = url.find("//");
     int j = url.find("/", i + 2);

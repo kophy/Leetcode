@@ -7,8 +7,8 @@
  * };
  */
 class Solution {
- public:
-  ListNode* swapPairs(ListNode* head) {
+public:
+  ListNode *swapPairs(ListNode *head) {
     ListNode dummy(0), *curr = &dummy;
     while (head != nullptr && head->next != nullptr) {
       ListNode *a = head, *b = head->next;

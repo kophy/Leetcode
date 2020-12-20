@@ -1,12 +1,12 @@
 class Solution {
- public:
+public:
   vector<string> generateParenthesis(int n) {
     vector<string> result;
     backtrack(result, "", n, 0, 0);
     return result;
   }
 
- private:
+private:
   void backtrack(vector<string> &result, const string &s, int n, int open,
                  int close) {
     if (open == n && close == n) {

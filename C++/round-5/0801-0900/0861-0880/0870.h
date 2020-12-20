@@ -1,6 +1,6 @@
 class Solution {
- public:
-  vector<int> advantageCount(vector<int>& A, vector<int>& B) {
+public:
+  vector<int> advantageCount(vector<int> &A, vector<int> &B) {
     multiset<int> data(A.begin(), A.end());
     vector<int> result(A.size());
     vector<bool> used(result.size(), false);

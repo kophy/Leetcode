@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string defangIPaddr(string address) {
     return std::regex_replace(address, std::regex("[.]"), "[.]");
   }

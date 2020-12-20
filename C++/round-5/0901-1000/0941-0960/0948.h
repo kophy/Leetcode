@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int bagOfTokensScore(vector<int>& tokens, int P) {
+public:
+  int bagOfTokensScore(vector<int> &tokens, int P) {
     sort(tokens.begin(), tokens.end());
     int points = 0, max_points = 0;
     int i = 0, j = (int)tokens.size() - 1;

@@ -8,13 +8,13 @@
  * };
  */
 class Solution {
- public:
+public:
   TreeNode *lcaDeepestLeaves(TreeNode *root) {
     int max_depth = 0;
     return helper(root, max_depth);
   }
 
- private:
+private:
   TreeNode *helper(TreeNode *root, int &depth) {
     if (root == nullptr) {
       depth = 0;

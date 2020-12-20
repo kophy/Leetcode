@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> findAndReplacePattern(vector<string> &words, string pattern) {
     string standard = getStandardForm(pattern);
     vector<string> result;
@@ -11,7 +11,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   string getStandardForm(const string &s) {
     string t(s.size(), ' ');
     unordered_map<char, char> m;

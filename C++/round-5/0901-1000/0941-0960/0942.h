@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> diStringMatch(string S) {
     int curr = 0;
     vector<int> result(S.size() + 1);

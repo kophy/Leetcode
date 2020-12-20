@@ -1,6 +1,6 @@
 class Solution {
- public:
-  vector<int> nextGreaterElements(vector<int>& nums) {
+public:
+  vector<int> nextGreaterElements(vector<int> &nums) {
     stack<int> data;
     for (int i = (int)nums.size() - 2; i >= 0; --i) {
       data.push(nums[i]);

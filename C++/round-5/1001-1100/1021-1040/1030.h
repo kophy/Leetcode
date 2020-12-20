@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<vector<int>> allCellsDistOrder(int R, int C, int r0, int c0) {
     vector<vector<int>> cells;
     for (int i = 0; i < R; ++i) {

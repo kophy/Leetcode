@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int largestPerimeter(vector<int>& A) {
+public:
+  int largestPerimeter(vector<int> &A) {
     sort(A.begin(), A.end());
     for (int i = (int)A.size() - 3; i >= 0; --i) {
       if (A[i] + A[i + 1] > A[i + 2]) {

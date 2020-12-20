@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int shipWithinDays(vector<int> &weights, int D) {
     int low = *std::max_element(weights.begin(), weights.end());
     int high = std::accumulate(weights.begin(), weights.end(), 0);
@@ -14,7 +14,7 @@ class Solution {
     return low;
   }
 
- private:
+private:
   bool canShip(const vector<int> &weights, int D, int capacity) {
     vector<int> orders(D, 0);
     int i = 0;

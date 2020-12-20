@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string removeVowels(string S) {
     int j = 0;
     for (int i = 0; i < S.size(); ++i) {
@@ -11,7 +11,7 @@ class Solution {
     return S;
   }
 
- private:
+private:
   bool isVowel(char c) {
     return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
   }

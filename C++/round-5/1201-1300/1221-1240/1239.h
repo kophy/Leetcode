@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxLength(vector<string> &arr) {
     unordered_map<string, bitset<26>> data;
     data[""] = bitset<26>(0);
@@ -22,7 +22,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   bool getMask(const string &s, bitset<26> &mask) {
     for (char c : s) {
       if (mask.test(c - 'a')) {

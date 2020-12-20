@@ -1,6 +1,6 @@
 class Solution {
- public:
-  bool validateStackSequences(vector<int>& pushed, vector<int>& popped) {
+public:
+  bool validateStackSequences(vector<int> &pushed, vector<int> &popped) {
     stack<int> s;
     int i = 0;
     for (int x : pushed) {

@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   bool isCousins(TreeNode *root, int x, int y) {
     unordered_map<int, int> depth;
     unordered_map<int, int> parent;
@@ -16,7 +16,7 @@ class Solution {
     return depth[x] == depth[y] && parent[x] != parent[y];
   }
 
- private:
+private:
   void dfs(TreeNode *node, int depth, unordered_map<int, int> &depth_map,
            TreeNode *parent, unordered_map<int, int> &parent_map) {
     if (parent != nullptr) {

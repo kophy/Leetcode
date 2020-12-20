@@ -1,9 +1,9 @@
 class Solution {
- public:
-  vector<vector<int>> queensAttacktheKing(vector<vector<int>>& queens,
-                                          vector<int>& king) {
+public:
+  vector<vector<int>> queensAttacktheKing(vector<vector<int>> &queens,
+                                          vector<int> &king) {
     unordered_map<int, vector<int>> m;
-    for (const auto& q : queens) {
+    for (const auto &q : queens) {
       m[getIndex(q[0], q[1])] = q;
     }
     vector<vector<int>> result;
@@ -29,7 +29,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   int getIndex(int i, int j) { return (i << 3) + j; }
 
   bool isValidCoordinate(int i, int j) {

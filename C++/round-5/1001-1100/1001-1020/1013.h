@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool canThreePartsEqualSum(vector<int> &A) {
     int N = A.size();
     if (N < 3) {

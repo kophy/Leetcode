@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   bool isCompleteTree(TreeNode *root) {
     int depth = maxDepth(root);
     vector<TreeNode *> data = {root};
@@ -35,7 +35,7 @@ class Solution {
     return true;
   }
 
- private:
+private:
   int maxDepth(TreeNode *root) {
     return (root == nullptr)
                ? 0

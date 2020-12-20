@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> pathInZigZagTree(int label) {
     vector<int> path;
     if (getHeight(label) % 2 == 0) {
@@ -15,7 +15,7 @@ class Solution {
     return path;
   }
 
- private:
+private:
   int getHeight(int n) {
     int h = 0;
     while ((1 << h) <= n) {

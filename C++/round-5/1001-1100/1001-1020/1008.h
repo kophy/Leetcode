@@ -8,12 +8,12 @@
  * };
  */
 class Solution {
- public:
+public:
   TreeNode *bstFromPreorder(vector<int> &preorder) {
     return bstFromPreorder(preorder, 0, (int)preorder.size() - 1);
   }
 
- private:
+private:
   TreeNode *bstFromPreorder(vector<int> &preorder, int i, int j) {
     if (i > j) {
       return nullptr;

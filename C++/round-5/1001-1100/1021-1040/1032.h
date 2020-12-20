@@ -1,5 +1,5 @@
 class StreamChecker {
- public:
+public:
   StreamChecker(vector<string> &words) {
     root = new SuffixTreeNode();
     max_length = 0;
@@ -17,7 +17,7 @@ class StreamChecker {
     return findWord(root, buffer);
   }
 
- private:
+private:
   typedef struct SuffixTreeNode {
     bool is_leaf;
     unordered_map<char, SuffixTreeNode *> children;

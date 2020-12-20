@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int minIncrementForUnique(vector<int>& A) {
+public:
+  int minIncrementForUnique(vector<int> &A) {
     if (A.empty()) {
       return 0;
     }

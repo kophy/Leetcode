@@ -10,11 +10,11 @@
  */
 class Solution {
 public:
-    int getDecimalValue(ListNode* head) {
-        int result = 0;
-        for (; head != nullptr; head = head->next) {
-            result = (result << 1) + head->val;
-        }
-        return result;
+  int getDecimalValue(ListNode *head) {
+    int result = 0;
+    for (; head != nullptr; head = head->next) {
+      result = (result << 1) + head->val;
     }
+    return result;
+  }
 };

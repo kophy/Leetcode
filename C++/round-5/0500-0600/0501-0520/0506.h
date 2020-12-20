@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> findRelativeRanks(vector<int> &nums) {
     vector<pair<int, int>> nums_with_indices;
     for (int i = 0; i < nums.size(); ++i) {

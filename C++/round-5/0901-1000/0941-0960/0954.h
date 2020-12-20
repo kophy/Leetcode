@@ -1,6 +1,6 @@
 class Solution {
- public:
-  bool canReorderDoubled(vector<int>& A) {
+public:
+  bool canReorderDoubled(vector<int> &A) {
     auto cmp = [](int a, int b) -> bool { return abs(a) < abs(b); };
     map<int, int, decltype(cmp)> count(cmp);
     for (int a : A) {

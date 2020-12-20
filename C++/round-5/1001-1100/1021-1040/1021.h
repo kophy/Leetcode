@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string removeOuterParentheses(string S) {
     stringstream ss;
     int count = 0;

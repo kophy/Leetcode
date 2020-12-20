@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int binaryGap(int N) {
     bitset<32> b(N);
     vector<int> indices;

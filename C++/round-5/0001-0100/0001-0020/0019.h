@@ -7,8 +7,8 @@
  * };
  */
 class Solution {
- public:
-  ListNode* removeNthFromEnd(ListNode* head, int n) {
+public:
+  ListNode *removeNthFromEnd(ListNode *head, int n) {
     ListNode dummy(0);
     dummy.next = head;
     ListNode *slow = &dummy, *fast = &dummy;

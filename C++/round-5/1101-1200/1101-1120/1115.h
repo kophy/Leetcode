@@ -1,9 +1,9 @@
 class FooBar {
- private:
+private:
   int n;
   std::mutex m1, m2;
 
- public:
+public:
   FooBar(int n) {
     this->n = n;
     m2.lock();

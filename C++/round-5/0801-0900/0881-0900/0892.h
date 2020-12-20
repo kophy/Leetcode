@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int surfaceArea(vector<vector<int>>& grid) {
+public:
+  int surfaceArea(vector<vector<int>> &grid) {
     if (grid.empty() || grid[0].empty()) {
       return 0;
     }

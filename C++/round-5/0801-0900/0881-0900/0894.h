@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   vector<TreeNode *> allPossibleFBT(int N) {
     if (memo.count(N)) {
       return memo[N];
@@ -34,6 +34,6 @@ class Solution {
     return result;
   }
 
- private:
+private:
   unordered_map<int, vector<TreeNode *>> memo;
 };

@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   vector<TreeNode *> delNodes(TreeNode *root, vector<int> &to_delete) {
     unordered_set<int> delete_set(to_delete.begin(), to_delete.end());
     vector<TreeNode *> result;
@@ -16,7 +16,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   TreeNode *helper(TreeNode *node, TreeNode *parent,
                    unordered_set<int> &delete_set, vector<TreeNode *> &result) {
     if (node == nullptr) {

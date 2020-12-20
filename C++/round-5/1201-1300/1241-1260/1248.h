@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int numberOfSubarrays(vector<int>& nums, int k) {
+public:
+  int numberOfSubarrays(vector<int> &nums, int k) {
     int result = 0, odd_count = 0;
     unordered_map<int, int> m;
     m[0] = 1;

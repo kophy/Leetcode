@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int balancedStringSplit(string s) {
     int count = 0;
     int diff = 0;

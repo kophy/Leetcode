@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minimumDistance(string word) {
     unordered_map<string, int> dp;
     dp["##"] = 0;
@@ -31,7 +31,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   int distance(char c1, char c2) {
     if (c1 == '#' || c2 == '#') {
       return 0;

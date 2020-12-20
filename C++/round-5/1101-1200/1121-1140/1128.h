@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numEquivDominoPairs(vector<vector<int>> &dominoes) {
     unordered_map<string, int> count;
     for (const auto &d : dominoes) {

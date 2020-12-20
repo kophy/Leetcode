@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool isAlienSorted(vector<string> &words, string order) {
     unordered_map<char, int> m;
     for (int i = 0; i < order.size(); ++i) {
@@ -13,7 +13,7 @@ class Solution {
     return true;
   }
 
- private:
+private:
   int compare(string &a, string &b, unordered_map<char, int> &m) {
     if (a.size() > b.size()) {
       return -compare(b, a, m);

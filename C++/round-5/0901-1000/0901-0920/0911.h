@@ -1,5 +1,5 @@
 class TopVotedCandidate {
- public:
+public:
   TopVotedCandidate(vector<int> persons, vector<int> times) {
     vector<int> count(persons.size(), 0);
     int winner = 0;
@@ -19,7 +19,7 @@ class TopVotedCandidate {
     return iter->second;
   }
 
- private:
+private:
   map<int, int> time2winner;
 };
 

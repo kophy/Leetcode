@@ -8,14 +8,14 @@
  * };
  */
 class Solution {
- public:
+public:
   int sumRootToLeaf(TreeNode *root) {
     int sum = 0;
     sumRootToLeafHelper(sum, root, 0);
     return sum;
   }
 
- private:
+private:
   void sumRootToLeafHelper(int &sum, TreeNode *root, int number) {
     if (root == nullptr) {
       return;

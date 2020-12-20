@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int earliestAcq(vector<vector<int>> &logs, int N) {
     vector<int> labels(N);
     for (int i = 0; i < N; ++i) {
@@ -21,7 +21,7 @@ class Solution {
     return -1;
   }
 
- private:
+private:
   int findLabel(vector<int> &labels, int x) {
     if (labels[x] != x) {
       labels[x] = findLabel(labels, labels[x]);

@@ -1,5 +1,5 @@
 class StockSpanner {
- public:
+public:
   StockSpanner() { index = 0; }
 
   int next(int price) {
@@ -12,7 +12,7 @@ class StockSpanner {
     return span;
   }
 
- private:
+private:
   stack<pair<int, int>> data;
   int index;
 };

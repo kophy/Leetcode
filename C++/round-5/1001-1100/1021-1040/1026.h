@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   int maxAncestorDiff(TreeNode *root) {
     int result = 0;
     if (root != nullptr) {
@@ -17,7 +17,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   pair<int, int> maxAncestorDiff(TreeNode *root, int &result) {
     if (root->left == nullptr && root->right == nullptr) {
       return make_pair(root->val, root->val);

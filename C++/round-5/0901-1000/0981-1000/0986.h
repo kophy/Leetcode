@@ -8,9 +8,9 @@
  * };
  */
 class Solution {
- public:
-  vector<Interval> intervalIntersection(vector<Interval>& A,
-                                        vector<Interval>& B) {
+public:
+  vector<Interval> intervalIntersection(vector<Interval> &A,
+                                        vector<Interval> &B) {
     vector<Interval> result;
     int i = 0, j = 0;
     while (i < A.size() && j < B.size()) {

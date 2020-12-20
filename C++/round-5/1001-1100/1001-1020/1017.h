@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string baseNeg2(int N) {
     string result;
     while (N) {

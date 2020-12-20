@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int makeConnected(int n, vector<vector<int>> &connections) {
     if (connections.size() < n - 1) {
       return -1;
@@ -19,7 +19,7 @@ class Solution {
     return unique_labels.size() - 1;
   }
 
- private:
+private:
   int find_label(vector<int> &labels, int i) {
     if (labels[i] != i) {
       labels[i] = find_label(labels, labels[i]);

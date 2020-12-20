@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<vector<int>> candyCrush(vector<vector<int>> &board) {
     if (board.empty() || board[0].empty()) {
       return board;
@@ -20,7 +20,7 @@ class Solution {
     return board;
   }
 
- private:
+private:
   int M, N;
 
   vector<vector<int>> getCrashedCandies(vector<vector<int>> &board) {

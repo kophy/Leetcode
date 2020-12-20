@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxEqualFreq(vector<int> &nums) {
     unordered_map<int, int> count;
     map<int, int> freq;
@@ -22,7 +22,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   bool isValidFreq(const unordered_map<int, int> &count,
                    const map<int, int> &freq) {
     if (freq.size() == 1) {

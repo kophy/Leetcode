@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<int> countSteppingNumbers(int low, int high) {
     vector<int> result;
     if (low == 0) {
@@ -12,7 +12,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   void helper(long curr, int low, int high, vector<int> &result) {
     if (curr > high) {
       return;

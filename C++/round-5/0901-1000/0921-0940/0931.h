@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int minFallingPathSum(vector<vector<int>> &A) {
     if (A.empty() || A[0].empty()) {
       return 0;
@@ -20,7 +20,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   int M, N;
 
   int getOrDefault(vector<vector<int>> &A, int i, int j, int default_val) {

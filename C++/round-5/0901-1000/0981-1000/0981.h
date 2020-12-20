@@ -1,5 +1,5 @@
 class TimeMap {
- public:
+public:
   /** Initialize your data structure here. */
   TimeMap() {}
 
@@ -18,7 +18,7 @@ class TimeMap {
     return prev(iter)->second;
   }
 
- private:
+private:
   unordered_map<string, map<int, string>> data;
 };
 

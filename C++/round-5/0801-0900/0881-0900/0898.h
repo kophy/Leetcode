@@ -1,6 +1,6 @@
 class Solution {
- public:
-  int subarrayBitwiseORs(vector<int>& A) {
+public:
+  int subarrayBitwiseORs(vector<int> &A) {
     unordered_set<int> result;
     unordered_set<int> last;
     for (int num : A) {

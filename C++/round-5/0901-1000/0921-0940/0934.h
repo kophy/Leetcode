@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int shortestBridge(vector<vector<int>> &A) {
     if (A.empty() || A[0].empty()) {
       return 0;
@@ -38,7 +38,7 @@ class Solution {
     return 0;
   }
 
- private:
+private:
   int M, N;
   vector<vector<int>> directions;
 

@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool validMountainArray(vector<int> &A) {
     if (A.size() < 3) {
       return false;

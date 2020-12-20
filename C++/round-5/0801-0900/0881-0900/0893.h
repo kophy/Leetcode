@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numSpecialEquivGroups(vector<string> &A) {
     unordered_set<string> groups;
     for (const string &s : A) {
@@ -8,7 +8,7 @@ class Solution {
     return groups.size();
   }
 
- private:
+private:
   string standardForm(const string &s) {
     string even, odd;
     for (int i = 0; i < s.size(); ++i) {

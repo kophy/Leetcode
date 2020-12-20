@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int numEnclaves(vector<vector<int>> &A) {
     if (A.empty() || A[0].empty()) {
       return 0;
@@ -26,7 +26,7 @@ class Solution {
     return enclaves;
   }
 
- private:
+private:
   int M, N;
 
   void dfs(vector<vector<int>> &A, int i, int j) {

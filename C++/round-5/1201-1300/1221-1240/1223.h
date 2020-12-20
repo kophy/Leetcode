@@ -1,7 +1,7 @@
 // First version.
 class Solution {
- public:
-  int dieSimulator(int n, vector<int>& rollMax) {
+public:
+  int dieSimulator(int n, vector<int> &rollMax) {
     vector<vector<int>> dp(n + 1, vector<int>(6, 0));
     for (int j = 0; j < 6; ++j) {
       dp[1][j] = 1;
@@ -34,14 +34,14 @@ class Solution {
     return result;
   }
 
- private:
+private:
   int M = pow(10, 9) + 7;
 };
 
 // Optimized version.
 class Solution {
- public:
-  int dieSimulator(int n, vector<int>& rollMax) {
+public:
+  int dieSimulator(int n, vector<int> &rollMax) {
     // Use column 6 to store the sum of columns 0 ~ 5.
     vector<vector<long>> dp(n + 1, vector<long>(7, 0));
     for (int j = 0; j < 6; ++j) {
@@ -64,6 +64,6 @@ class Solution {
     return dp[n][6];
   }
 
- private:
+private:
   int M = pow(10, 9) + 7;
 };

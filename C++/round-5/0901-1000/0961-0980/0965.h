@@ -8,7 +8,7 @@
  * };
  */
 class Solution {
- public:
+public:
   bool isUnivalTree(TreeNode *root) {
     if (root == nullptr) {
       return true;
@@ -16,7 +16,7 @@ class Solution {
     return isUnivalTree(root, root->val);
   }
 
- private:
+private:
   bool isUnivalTree(TreeNode *root, int val) {
     if (root == nullptr) {
       return true;

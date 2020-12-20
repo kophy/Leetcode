@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int bitwiseComplement(int N) {
     if (N == 0) {
       return 1;

@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int videoStitching(vector<vector<int>> &clips, int T) {
     sort(clips.begin(), clips.end(),
          [](const vector<int> &a, const vector<int> &b) -> bool {

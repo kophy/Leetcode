@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   string orderlyQueue(string S, int K) {
     // with K == 1, we can make all rotations of S.
     if (K == 1) {

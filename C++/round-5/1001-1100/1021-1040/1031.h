@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int maxSumTwoNoOverlap(vector<int> &A, int L, int M) {
     vector<int> presums(A.size() + 1, 0);
     for (int i = 0; i < A.size(); ++i) {
@@ -9,7 +9,7 @@ class Solution {
                maxSumTwoNoOverlapHelper(presums, M, L));
   }
 
- private:
+private:
   int maxSumTwoNoOverlapHelper(vector<int> &presums, int L, int M) {
     int result = 0;
     for (int i = 0; i + L + M < presums.size(); ++i) {
@@ -25,7 +25,7 @@ class Solution {
 };
 
 class Solution {
- public:
+public:
   int maxSumTwoNoOverlap(vector<int> &A, int L, int M) {
     vector<int> presums(A.size() + 1, 0);
     for (int i = 0; i < A.size(); ++i) {
@@ -35,7 +35,7 @@ class Solution {
                maxSumTwoNoOverlapHelper(presums, M, L));
   }
 
- private:
+private:
   int maxSumTwoNoOverlapHelper(vector<int> &presums, int L, int M) {
     int result = 0;
     stack<int> max_sum_M;

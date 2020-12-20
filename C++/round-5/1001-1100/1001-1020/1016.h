@@ -1,10 +1,10 @@
 class Solution {
- public:
+public:
   bool queryString(string S, int N) {
     // small optimization to avoid checking repeated patterns.
     int i = 1;
     while (i * 2 <= N) {
-        i <<= 1;
+      i <<= 1;
     }
     i >>= 1;
     for (; i <= N; ++i) {
@@ -15,7 +15,7 @@ class Solution {
     return true;
   }
 
- private:
+private:
   string toBinaryString(int N) {
     string s;
     while (N > 0) {

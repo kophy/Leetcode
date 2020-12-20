@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   bool reorderedPowerOf2(int N) {
     vector<int> digits;
     while (N > 0) {
@@ -18,7 +18,7 @@ class Solution {
     return false;
   }
 
- private:
+private:
   bool isPowerOf2(vector<int> &digits) {
     long num = 0;
     for (int digit : digits) {

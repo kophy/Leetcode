@@ -1,5 +1,5 @@
 class RLEIterator {
- public:
+public:
   RLEIterator(vector<int> A) {
     for (int i = 0; i < A.size(); i += 2) {
       data.push(make_pair(A[i + 1], A[i]));
@@ -21,7 +21,7 @@ class RLEIterator {
     return result;
   }
 
- private:
+private:
   queue<pair<int, int>> data;
 };
 

@@ -1,5 +1,5 @@
 class Foo {
- public:
+public:
   Foo() { count = 1; }
 
   void first(function<void()> printFirst) {
@@ -25,6 +25,6 @@ class Foo {
     printThird();
   }
 
- private:
+private:
   int count;
 };

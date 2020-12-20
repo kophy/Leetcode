@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<string> wordSubsets(vector<string> &A, vector<string> &B) {
     vector<int> universal_vec(26, 0);
     for (auto &word : B) {
@@ -25,7 +25,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   vector<int> getLetterVec(const string &s) {
     vector<int> v(26, 0);
     for (char c : s) {

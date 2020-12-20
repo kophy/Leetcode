@@ -11,8 +11,8 @@
  */
 
 class Solution {
- public:
-  vector<vector<int>> findSolution(CustomFunction& customfunction, int z) {
+public:
+  vector<vector<int>> findSolution(CustomFunction &customfunction, int z) {
     vector<vector<int>> result;
     int x = 1, y = 1000;
     while (x < 1000 && y >= 1) {

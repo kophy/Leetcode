@@ -1,11 +1,11 @@
 class Solution {
- public:
+public:
   int minHeightShelves(vector<vector<int>> &books, int shelf_width) {
     vector<int> memo(books.size(), INT_MAX);
     return helper(books, shelf_width, memo, 0);
   }
 
- private:
+private:
   int helper(vector<vector<int>> &books, int shelf_width, vector<int> &memo,
              int pos) {
     if (pos >= books.size()) {

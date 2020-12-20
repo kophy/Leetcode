@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int regionsBySlashes(vector<string> &grid) {
     N = grid.size();
     vector<int> labels(N * N * 4, 0);
@@ -41,7 +41,7 @@ class Solution {
     return unique_labels.size();
   }
 
- private:
+private:
   int N;
 
   int encode(int i, int j, int k) { return 4 * N * i + 4 * j + k; }

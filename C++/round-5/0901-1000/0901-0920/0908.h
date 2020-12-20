@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int smallestRangeI(vector<int> &A, int K) {
     int min_val = INT_MAX, max_val = INT_MIN;
     for (int i = 0; i < A.size(); ++i) {

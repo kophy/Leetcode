@@ -1,6 +1,6 @@
 class Solution {
- public:
-  vector<vector<int>> matrixBlockSum(vector<vector<int>>& mat, int K) {
+public:
+  vector<vector<int>> matrixBlockSum(vector<vector<int>> &mat, int K) {
     int M = mat.size(), N = mat[0].size();
     vector<vector<int>> sum(M + 1, vector<int>(N + 1, 0));
     for (int i = 0; i < M; ++i) {

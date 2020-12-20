@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   int smallestRepunitDivByK(int K) {
     int num_mod_k = 0;
     int count = 0;
